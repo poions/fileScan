@@ -3,7 +3,7 @@
 说明：
 这是一款通过爆破目录文件的方式，在利用获取到的存在信息进行信息泄漏的检测。
 爆破方式是通过组合字典爆破枚举，字典是githubmaidou从源码之家下载了2000套源码分析出来的目录字典和文件字典
-设计思路是通过对githubmaidou的脚本改造在嵌入到ring04h的信息泄漏的检测脚本去的这一种改轮子行为。
+设计思路是通过对githubmaidou的脚本改造在嵌入到ring04h的信息泄漏的检测脚本去改造的轮子。
 
 使用方式：
 fileScan.py http://www.wooyun.com php
@@ -20,4 +20,8 @@ fileScan.py http://www.wooyun.com php
 缺点：
 1、未能识别waf存在而出现的误报
 2、对于站点对404页面更改的情况未能进行判断
+
+改造脚本来源：
+githubmaidou     https://github.com/githubmaidou/tools/tree/master/dirScan
+ring04h          https://github.com/ring04h/weakfilescan
 
