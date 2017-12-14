@@ -21,7 +21,7 @@ fileScan.py http://www.wooyun.com php
 1、未能识别waf存在而出现的误报
 2、对于站点对404页面更改的情况未能进行判断
 
-改造脚本来源：
+思路来源：
 githubmaidou     https://github.com/githubmaidou/tools/tree/master/dirScan
 ring04h          https://github.com/ring04h/weakfilescan
 
