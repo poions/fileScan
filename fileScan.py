@@ -4,7 +4,7 @@ import re
 import sys
 import time
 import math
-import queue
+import Queue
 import requests
 import threading
 from fileScan import *
@@ -29,7 +29,7 @@ class fileScan(object):
 		self.bak_ext = ['zip','rar','tar','tar.gz','sql']				#备份文件格式
 		self.STOP_FILE = False #禁止文件扫描
 		self.STOP_URL = False  #禁止目录扫描
-		self.msg_queue = queue.Queue()
+		self.msg_queue = Queue.Queue()
 		self.STOP_ME = False
 		self.scan_level = 2
 		self.target_url = url
